@@ -12,7 +12,9 @@ h1{  //selector para los h1
 
 .texto-boton{
     background-color: #025157;
-    border-radius: 6px;
+    border-radius: 6
+    
+    px;
     border: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
