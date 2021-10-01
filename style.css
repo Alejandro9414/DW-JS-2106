@@ -1,0 +1,23 @@
+h1{  //selector para los h1
+    color: #025157; 
+}
+
+#rojo{    <!--// # señala que es un id para que lo identifique el html -->
+    color: red;
+}
+
+.verde{   <!--// se utiliza para mas de una ves un color sera una clase -->
+    color: green;
+}
+
+.texto-boton{
+    background-color: #025157;
+    border-radius: 6px;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    padding: 6px 20px;
+    
+
+}
