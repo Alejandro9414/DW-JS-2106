@@ -1,24 +1,22 @@
 body{
-    maring: 0;
+    margin: 0;
 }
 
 h1{  
     color: #025157; 
 }
 
-#rojo{    <!--// # señala que es un id para que lo identifique el html -->
+#rojo{   
     color: red;
 }
 
-.verde{   <!--// se utiliza para mas de una ves un color sera una clase -->
+.verde{  
     color: green;
 }
 
 .texto-boton{
     background-color: #025157;
-    border-radius: 6
-    
-    px;
+    border-radius: 6 px;
     border: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
