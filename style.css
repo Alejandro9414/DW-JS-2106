@@ -22,8 +22,6 @@ h1{
     border-bottom-left-radius: 0;
     color: white;
     padding: 6px 20px;
-    
-
 }
 
 .login-Boton{
@@ -57,8 +55,17 @@ h1{
 
 
 .header{
-    margin: 40px 20px 0;
+    margin: 0 20px;
     font-size: 0px;
+    height: 60px;
+    line-height: 45px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    position: fixed;
+
 
 }
 
@@ -89,5 +96,41 @@ h1{
 .hader .actions{
     width: 15%;
     text-align: right;
+}
+
+.publish h3{
+    font-size: 40px;
+    color:#025157;
+
+
+}
+
+.publish{
+    padding-left: 20px;
+}
+.publish >p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #343434;
+}
+
+.promo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: 100px auto; /*margen */
+}
+
+.promo. explanatory-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo. explanatory-video img{
+  width: 120px;
+  margin-top: 10px;
 }
 
