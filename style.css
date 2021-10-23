@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #fffbf7;
 }
 
 h1{  
@@ -11,17 +12,22 @@ h1{
 }
 
 .verde{  
-    color: green;
+    color: #8b8b8bcc; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 .texto-boton{
+    color:#fff; 
     background-color: #025157;
-    border-radius: 6 px;
-    border: none;
+    border-radius: 8px; 
+    border: none; 
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    color: white;
+    border-bottom-left-radius: 0;  
+    font-size: 1rem; 
+    margin: -10px;
     padding: 6px 20px;
+    height: 100%; 
 }
 
 .login-Boton{
@@ -33,10 +39,19 @@ h1{
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 1rem;
 }
 
-
+.input-main{
+    font-size: 1rem;
+    height: calc(100% - 14px);
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 6px 20px;
+    max-width: 250px;
+}
 
 .main{
     margin-top: 140px;
@@ -52,32 +67,44 @@ h1{
 
 }
 
-
+.main h4{
+    font-size: 20px;
+    color: #46484c;
+    margin-bottom: 30px;
+    font-family:'Slabo 27px', serif;
+    font-weight: 500;
+}
 
 .header{
-    margin: 0 20px;
+    margin: 0;
     font-size: 0px;
     height: 60px;
     line-height: 45px;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #ffffff;
-    padding-bottom: 15px;
+    padding:0 15px;
+    background-color:  #fffbf7;
+    padding-bottom: 10px;
     position: fixed;
-
-
+    font-family:'Open Sans', sans-serif;
+    
 }
 
 .header li{
     display: inline;
+    color:#4CAF50;
+    margin: 0 8px;
+
 }
 
 
 .header >*{  
+   
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
+    
 }
 
 .header .logo{
@@ -96,13 +123,32 @@ h1{
 .hader .actions{
     width: 15%;
     text-align: right;
+    font-size: 14px;
+    font-weight: 600;
 }
 
+.header .actions button{
+    background-color: #67b54b;
+    color: white;
+    padding:12px 14px;
+    border: 0;
+    border-radius: 5px;
+
+}
 .publish h3{
     font-size: 40px;
     color:#025157;
+    font-family: 'Alegreya',serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
 
-
+.publish p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.login{
+    height: 55px;
 }
 
 .publish{
@@ -116,21 +162,181 @@ h1{
 }
 
 .promo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 70%;
-    margin: 100px auto; /*margen */
+    display: flex; /*forma los contenedores del contenedor mayor (section) en columnas o filas*/
+    align-items: center; /*alinea los contenedores hijos de forma centrada*/
+    width: 60%; /*reducimos el ancho del contenedor mayor*/
+    margin:75px auto;  /*el flex calcula el margen que debe haber a los lados*/
+    padding-bottom: 30px;
 }
 
-.promo. explanatory-video{
+.promo .explanatory-video{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.promo. explanatory-video img{
+.promo .explanatory-video img{
   width: 120px;
   margin-top: 10px;
 }
 
+.publish p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.login p{
+    font-family: 'Open Sans', sans-serif;
+    color: #8b8b8bcc; 
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.historias-exitos{
+    background-color: #a1d683;
+    padding: 55px 158px;
+    display: flex;
+
+
+}
+
+.historias-exitos img{
+    width: 500px;
+    
+}
+
+.referencia h2{
+    font-size: 60px;
+    color:#025157;
+    font-family: 'Alegreya',serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.referencia p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.features {
+    display: grid;
+    background-color: #025157;
+   grid-template: repeat(2,1fr) / repeat(2,1fr);
+    padding: 5% 10%;
+    height: 800px;
+}
+
+
+
+
+
+.features-card .feature-figura img{
+    width:50px;
+    margin-left: 0;
+    padding: 0 ;
+    
+}
+
+.features .features-card{
+
+    display: flex;
+    margin:0 15px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    align-items: center;
+    overflow: hidden; /*permite que el contenido salga del contenedor*/
+    padding: 30px;
+}
+
+.features-card  h4{
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 24px;
+    color: #343434;
+    font-weight: 700;
+    
+}
+
+.feature-content figure{
+    margin-left: 0;
+}
+
+.feature-content{
+    flex: 1;
+}
+.feature-content p{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+.feature-content h4{
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+.feature-content a{
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.features-imagen {
+    flex: 1;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    right: -50px;
+    overflow: hidden;
+    transition:righ 0.5s;
+}
+
+.features-imagen figure{
+    margin-top: 0;
+    height: 100%;
+}
+
+.features-imagen:hover {
+    right: 0;
+}
+
+.features-imagen figure img{
+    margin-top: 0;
+    height: 100%;
+}
+
+
+
+/* Empiezan los medi queries*/
+
+@media (max-width:425px){
+    body{
+        background-color: lightblue;
+    }
+}
+
+@media (min-width:426px) and (max-width:450px){
+    body{
+        background-color: red;
+    }
+}
+
+@media (max-width:425px){
+    .actions, .navbar{
+        display: none;
+    }
+
+    .header{
+        padding-top: 15px;
+    }
+
+    .main h1{
+        font-size: 30px;
+    }
+}
