@@ -75,6 +75,13 @@ h1{
     font-weight: 500;
 }
 
+.main .intro{
+    margin-top: 32px;
+}
+.main .intro img{
+    width: 70%;   /*especifica la anchura del area de contenido de un elemento.*/
+}   
+
 .header{
     margin: 0;
     font-size: 0px;
@@ -169,13 +176,13 @@ h1{
     padding-bottom: 30px;
 }
 
-.promo .explanatory-video{
+.promo .video{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.promo .explanatory-video img{
+.promo .video img{
   width: 120px;
   margin-top: 10px;
 }
@@ -315,11 +322,7 @@ h1{
 
 /* Empiezan los medi queries*/
 
-@media (max-width:425px){
-    body{
-        background-color: lightblue;
-    }
-}
+
 
 @media (min-width:426px) and (max-width:450px){
     body{
@@ -333,10 +336,56 @@ h1{
     }
 
     .header{
-        padding-top: 15px;
+        
+        padding: 15px 15px 0;
+        z-index: 1;
+        margin: 0;
     }
 
+    .main{
+        margin-top: 130px;
+    }
     .main h1{
         font-size: 30px;
     }
+
+    .main .banner img{
+        width: 100%;
+    }
+
+    .intro{
+        margin: 10px ;
+    }
+
+    .promo{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        max-width: 90%;
+        width: unset; /*unset recuperar el valor*/
+    }
+
+    .video > video{
+        width: 100%;
+    }
+    
+    .publish h3{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+   
+      .features{
+          grid-template: repeat(4,1fr)/1fr;
+          padding-left: 0;
+          padding-right: 0;
+          height: unset;
+      } 
+
+      .features-imagen{
+          display: none;
+      }
+
+
+
 }
